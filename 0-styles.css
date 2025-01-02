@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./fonts/SourceSansPro-Regular.otf');
+}
+@font-face {
+    font-family: "boldfont";
+    src: url("./fonts/SourceSansPro-Bold.otf");
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-color : #FF6565;
+    --main-font : 'MyCustomFont';
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/***======================HEADER===================***/
+.background_wallpaper {
+    background-image: url("./images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    background-position: center; /* Center the image */
+    height: 950px;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 50%;
+    height: auto;
+}
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+}
+ul li {
+    font-family: var(--main-font);
+    font-weight:bold;
+    font-size: 12px;
+    list-style: none;
+    padding: 10px;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul li a:hover {
+    color: var(--btn-color);
+}
+
+/* */
+
+.main_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40%;
+    gap: 2rem;
+}
+
+.main_part div {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.main_part div p , .main_part div h1{
+    font-family: "boldfont";
+    margin: 0;
+
+}
+
+.call_to_action {
+    max-width: fit-content;
+    color: #FFFFFF;
+    background-color: var(--btn-color);
+    border: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    margin:1rem 0 2rem 0;
+    cursor: pointer;
+
+}
+
+.main_part > p {
+    color: #FFFFFF;
+    font-family: var(--main-font);
+    text-align: center;
+    max-width: 637px;
+    line-height: 1.5;
+    margin-bottom: 10rem;
+}
+
+
+
+/*===================== MAIN SECTION ======================*/
+main {
+    max-width: 1000px;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+/* WHAT WE DO ARTICLE*/
+
+
+
+
+
+/* ICONS ARTICLE*/
+
+main section article.icons {
+    display: flex;
+    align-items: baseline;
+}
+
+main section article.icons div {
+    text-align: center;
+}
